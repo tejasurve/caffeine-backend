@@ -1,0 +1,17 @@
+{
+  "name": "caffeine-be",
+  "version": "1.0.0",
+  "description": "Backend of Coffee app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Coffee",
+    "Caffeine",
+    "JS",
+    "Node"
+  ],
+  "author": "Tejas Surve",
+  "license": "ISC"
+}
