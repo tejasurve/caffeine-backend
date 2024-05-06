@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors"
 import cookieParser from "cookie-parser";
-import dotenv from dotenv;
+import dotenv from "dotenv";
+import { postCoffeeApi, testAPi } from "./routes/routes.js";
 
 
 dotenv.config();
@@ -28,6 +29,7 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
-
+app.use(testAPi);
+app.use(postCoffeeApi);
 
 export { app }; 
