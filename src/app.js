@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors"
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-import { postCoffeeApi, testAPi } from "./routes/routes.js";
+import {  createUser, testAPi, mangaHome ,mangaDetailsByID} from "./routes/routes.js";
 
 
 dotenv.config();
@@ -29,7 +29,7 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
-app.use(testAPi);
-app.use(postCoffeeApi);
+app.use(createUser);
+app.use(mangaDetailsByID);
 
 export { app }; 
