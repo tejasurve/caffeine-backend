@@ -34,6 +34,7 @@ connectDB()
             console.log(`✅ Server is running:`);
             console.log(`   Local:   http://localhost:${PORT}`);
             console.log(`   Network: http://${localIp}:${PORT}`);
+            console.log(`MANGA_SEARCH : ${process.env.MANGA_SEARCH}`)
         });
 })
 .catch((err)=> {

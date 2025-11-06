@@ -8,7 +8,7 @@ const mangaDetails = async (req, res) => {
     try {
         const queryParams = {
             variables: {"_id":`${id}`},
-            extensions: {"persistedQuery":{"version":1,"sha256Hash":"529b0770601c7e04c98566c7b7bb3f75178930ae18b3084592d8af2b591a009f"}}
+            extensions: {"persistedQuery":{"version":1,"sha256Hash":process.env.MANGA_DETAILS}}
             
           };
           const response = await getData(queryParams, {}, {});

@@ -47,7 +47,7 @@ const searchManga = async (req, res) => {
                 
                 "persistedQuery":{
                     "version":1,
-                    "sha256Hash":"a27e57ef5de5bae714db701fb7b5cf57e13d57938fc6256f7d5c70a975d11f3d"
+                    "sha256Hash":process.env.MANGA_SEARCH
                 }
             }
         };

@@ -7,11 +7,11 @@ const getAnimeList = async (req, res) => {
       category != null
         ? {
             variables: {"search":{"genres":[category]},"limit":26,"page":1,"translationType":"sub","countryOrigin":"JP"},
-            extensions: {"persistedQuery":{"version":1,"sha256Hash":"06327bc10dd682e1ee7e07b6db9c16e9ad2fd56c1b769e47513128cd5c9fc77a"}},
+            extensions: {"persistedQuery":{"version":1,"sha256Hash":process.env.ANIME_LIST_WITH_CATEGORY}},
           }
         : {
             variables:{"type":"anime","size":20,"dateRange":1,"page":1,"allowAdult":false,"allowUnknown":false},
-            extensions: {"persistedQuery":{"version":1,"sha256Hash":"1fc9651b0d4c3b9dfd2fa6e1d50b8f4d11ce37f988c23b8ee20f82159f7c1147"}}
+            extensions: {"persistedQuery":{"version":1,"sha256Hash":process.env.ANIME_LIST}}
           };
     const response = await getData(queryParams, {}, {});
     return res.status(200).json({ data: response?.data });

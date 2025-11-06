@@ -17,7 +17,7 @@ const getMangaPages = async (req, res) => {
             extensions: {
                  "persistedQuery": { 
                     "version": 1,
-                    "sha256Hash": "121996b57011b69386b65ca8fc9e202046fc20bf68b8c8128de0d0e92a681195" 
+                    "sha256Hash": process.env.MANGA_PAGES 
                 } 
             }
         };

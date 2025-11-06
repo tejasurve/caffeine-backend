@@ -16,7 +16,7 @@ const getAnimeDetails = async (req, res) => {
             extensions: {
                  "persistedQuery": { 
                     "version": 1,
-                    "sha256Hash": "5f1a64b73793cc2234a389cf3a8f93ad82de7043017dd551f38f65b89daa65e0" 
+                    "sha256Hash": process.env.ANIME_DETAILS 
                 } 
             }
         };

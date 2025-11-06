@@ -42,7 +42,7 @@ const mangaList = async (req, res) => {
             extensions: {
               persistedQuery: {
                 version: 1,
-                sha256Hash: "1fc9651b0d4c3b9dfd2fa6e1d50b8f4d11ce37f988c23b8ee20f82159f7c1147"
+                sha256Hash: process.env.MANGA_LIST
               }
             }
           };
